@@ -1,52 +1,59 @@
 from bs4 import BeautifulSoup
-import codecs
-import tkFileDialog
-import re
-import time
-import os
+import codecs, tkFileDialog, re, time, datetime
 
 def FBMessageCleaner():
-	CleanFile(OpenFile())
+	filepath = tkFileDialog.askopenfilename()
+	SaveFile( CleanFile( OpenFile(filepath) ), GetSaveLocation(filepath) )
 
-def OpenFile():
-	file = tkFileDialog.askopenfilename()
-	startTime = time.time()
+def OpenFile(file):
 	entirehtml = codecs.open(file, 'r')	
-	endTime = time.time()
-	print("File opened in " + str("%.2f" % (endTime - startTime)) + "seconds")
 	return entirehtml
 
 def CleanFile(document):
 	regex = re.compile('\\d{2}/\\d{2}/\\d{4},.\\d{2}:\\d{2}')
-	startTime = time.time()
+	CleanStartTime = time.time()
 	cleaned = BeautifulSoup(document, "lxml").get_text()
 	cleaned = cleaned.split(" ")
-	for i in range(290):
-		cleaned.pop(0)
+	if(len(cleaned) < 290):
+		print("Wrong type of file, please choose a facebook messenger history file.")
+		quit()
+	else:
+		for i in range(290):
+			cleaned.pop(0)
 	cleaned =  " ".join(cleaned)
 	cleanedwregex = re.split(regex, cleaned)
 	listofdates = re.findall(regex, cleaned)
-	endTime = time.time()
-	if(len(listofdates) == 0):
-		print("No dates found, please choose a facebook messenger history file.")
-		quit()
-	print("HTML cleaned in " + str("%.2f" % (endTime - startTime)) + "seconds")
+	CleanEndTime = time.time()
+	print("HTML cleaned in " + str("%.2f" % (CleanEndTime - CleanStartTime)) + "seconds")
 
+	PrintStartTime = time.time()
 	gucciString = ""
 	for i in range(len(cleanedwregex) - 1):
 		gucciString += listofdates[i] + " | " + cleanedwregex[i] + "\n"
 
-	gucciString = unicode(gucciString).encode('utf-8')
 	print(gucciString)
+	PrintEndTime = time.time()
+	print("Printed to console in " + str("%.2f" % (PrintEndTime - PrintStartTime)) + "seconds")
+	
+	return gucciString
 
-	if os.name == 'nt':
-		desktop = os.path.join(os.path.join(os.environ['USERPROFILE']), 'Desktop') 
-	else:
-		desktop = os.path.join(os.path.join(os.path.expanduser('~')), 'Desktop')
+def SaveFile(text, location):
+	text = unicode(text).encode('utf-8')
+	with open(location, "w") as text_file:
+		text_file.write(text)
+	print("Clean file saved in:" + location)
 
-	with open(desktop + "/CleanedMessage.txt", "w") as text_file:
-   	 text_file.write(gucciString)
-   	 print("Clean file saved in:" + desktop + "/CleanedMessage.txt")
-
-
+def GetSaveLocation(file):
+	path = file.split('/')
+	if( '_' in path[len(path) - 2]) :
+		#If user is using the default extracted folder (/messages/inbox/NAME_ID/Message.html)
+		filename = path[len(path) - 2].split('_')[0] + "_CLEAN-" + str(datetime.datetime.now()).split('.')[0]
+	else:	
+		#If user is using the file from somewhere else
+		filename = "CLEAN_CHAT-" + str(datetime.datetime.now()).split('.')[0]
+	del path[-1]
+	path.insert(len(path), filename + ".txt")
+	path = "/".join(path)
+	return path
+	
 FBMessageCleaner()
