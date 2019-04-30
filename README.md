@@ -15,13 +15,10 @@ How to use this amazing script
 
 Transform ugly HTML text like this:
 
-<div><div></div><div>e usas uma em cada pilar</div><div></div><div></div></div></div><div class="_3-94 _2lem">11/12/2017, 21:44</div></div><div class="pam _3-95 _2pi0 _2lej uiBoxWhite noborder"><div class="_3-96 _2pio _2lek _2lel">Bruno Paixao</div><div class="_3-96 _2let"><div><div></div><div>e eles dropam pedras chaves</div><div></div><div></div></div></div><div class="_3-94 _2lem">11/12/2017, 21:44</div></div><div class="pam _3-95 _2pi0 _2lej uiBoxWhite noborder"><div class="_3-96 _2pio _2lek _2lel">Bruno Paixao</div><div class="_3-96 _2let"><div><div></div><div>tens de matar os orcs</div><div></div><div></div></div></div><div class="_3-94 _2lem">11/12/2017, 21:44</div></div><div class="pam _3-95 _2pi0 _2lej uiBoxWhite noborder"><div class="_3-96 _2pio _2lek _2lel">Bruno Paixao</div><div class="_3-96 _2let"><div><div></div><div>ai</div><div></div><div></div></div></div><div class="_3-94 _2lem">11/12/2017, 21:44</div></div><div class="pam _3-95 _2pi0 _2lej uiBoxWhite noborder"><div class="_3-96 _2pio _2lek _2lel">Francisco Zacarias</div><div class="_3-96 _2let"><div><div></div><div>o que é que tenho de fazer aqui</div><div></div><div></div></div></div><div class="_3-94 _2lem">11/12/2017, 21:31</div></div><div class="pam _3-95 _2pi0 _2lej uiBoxWhite noborder"><div class="_3-96 _2pio _2lek _2lel">Francisco Zacarias</div><div class="_3-96 _2let"><div><div></div><div></div><div></div><div></div><div><div><a href="messages/inbox/FranciscoZacarias_HnkC-5qgcw/photos/25316961_1940699929292478_1400876598_o_1940699929292478.png"><img src="messages/inbox/FranciscoZacarias_HnkC-5qgcw/photos/25316961_1940699929292478_1400876598_o_1940699929292478.png" class="_2yuc _3-96" /></a></div></div></div></div><div class="_3-94 _2lem">11/12/2017, 21:31</div></div><div class="pam _3-95 _2pi0 _2lej uiBoxWhite noborder"><div class="_3-96 _2pio _2lek _2lel">Francisco Zacarias</div><div class="_3-96 _2let"><div><div></div><div>caro engenheiro do ips peço desculpa estar a incomodar mas nao sei o que fazer agora</div><div></div><div></div></div></div><div class="_3-94 _2lem">11/12/2017, 21:31</div></div><div class="pam _3-95 _2pi0 _2lej uiBoxWhite noborder"><div class="_3-96 _2pio _2lek _2lel">Francisco Zacarias</div><div class="_3-96 _2let"><div><div></div><div>Diz olá ao teu novo amigo do Facebook, Francisco.</div><div></div><div></div></div></div><div class="_3-94 _2lem">29/11/2017, 22:38</div></div></div></div><div class="_4t5o">Gerado por Bruno Paixao a Segunda-feira, 22 de abril de 2019 às 08:03 UTC+01:00</div></div></div></div></body></html>
+http://prntscr.com/ninrh2
+  
+Into something readable, like this
 
-
-Into readable text, like this:
-
-11/12/2017, 21:44 | Bruno Paixaoe usas uma em cada pilar
-11/12/2017, 21:44 | Bruno Paixaoe eles dropam pedras chaves
 11/12/2017, 21:44 | Bruno Paixaotens de matar os orcs
 11/12/2017, 21:44 | Bruno Paixaoai
 11/12/2017, 21:31 | Francisco Zacariaso que é que tenho de fazer aqui
