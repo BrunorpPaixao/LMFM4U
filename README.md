@@ -19,9 +19,9 @@ http://prntscr.com/ninrh2
   
 Into something readable, like this
 
-11/12/2017, 21:44 | Bruno Paixaotens de matar os orcs
-11/12/2017, 21:44 | Bruno Paixaoai
-11/12/2017, 21:31 | Francisco Zacariaso que é que tenho de fazer aqui
-11/12/2017, 21:31 | Francisco Zacarias
-11/12/2017, 21:31 | Francisco Zacariascaro engenheiro do ips peço desculpa estar a incomodar mas nao sei o que fazer agora
+11/12/2017, 21:44 | Bruno Paixaotens de matar os orcs<br>
+11/12/2017, 21:44 | Bruno Paixaoai<br>
+11/12/2017, 21:31 | Francisco Zacariaso que é que tenho de fazer aqui<br>
+11/12/2017, 21:31 | Francisco Zacarias<br>
+11/12/2017, 21:31 | Francisco Zacariascaro engenheiro do ips peço desculpa estar a incomodar mas nao sei o que fazer agora<br>
 29/11/2017, 22:38 | Francisco ZacariasDiz olá ao teu novo amigo do Facebook, Francisco.
